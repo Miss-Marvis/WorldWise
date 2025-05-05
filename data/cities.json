@@ -1,0 +1,40 @@
+{
+  "cities": [
+    {
+      "id": "1",
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.72225,
+        "lng": -9.139755899797104
+      }
+    },
+    {
+      "id": "2",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.416775,
+        "lng": -3.70379
+      }
+    },
+    {
+      "id": "3856",
+      "cityName": "Alfaro",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-05-05T19:02:19.837Z",
+      "notes": "Will definitely return here 🤩",
+      "position": {
+        "lat": 42.21072511143876,
+        "lng": -1.8237304687500002
+      }
+    }
+  ]
+}

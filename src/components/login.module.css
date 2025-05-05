@@ -1,0 +1,64 @@
+/* Login.module.css */
+.login {
+  min-height: 100vh;
+  background-color: #1c1f26;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.productNav {
+  position: absolute;
+  top: 0;
+}
+
+.form {
+  background-color:  #42484d;
+  padding: 2rem;
+  width: 100%;
+  max-width: 360px;
+  border-radius: 5px;
+}
+
+
+
+.row {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.row label[for="name"] {
+  font-size: 1rem;
+}
+
+.row input {
+  padding: 0.8rem 1rem;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 1.6rem;
+}
+
+.btn {
+  background-color: #00c05a;
+  color: white;
+  padding: 1.4rem 1.4rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: auto;
+  font-size: 1rem;
+  float: right;
+  font-size: 1.4rem;
+}
+
+.btn:hover {
+  background-color: #00a84e;
+}
+

@@ -1,0 +1,59 @@
+
+.homeNav {
+  position: relative; 
+}
+
+.homepage {
+  height: calc(100vh - 5rem);
+  margin: 2.5rem;
+  background-image: linear-gradient(
+    rgba(36, 42, 46, 0.6),  
+    rgba(36, 42, 46, 0.6)   
+  ), url("../assets/HomePage.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 2.5rem 5rem;
+}
+
+.homepage section {
+  display: flex;
+  flex-direction: column;
+  height: 85%;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.homepage h1 {
+  font-size: 4.5rem;
+  line-height: 1.1;
+}
+.homepage h2 {
+  width: 90%;
+  font-size: 1.9rem;
+  color: var(--color-light-1);
+  margin-bottom: 2.5rem;
+}
+
+.homeSection p{
+  max-width: 70%;
+}
+
+.cta:link,
+.cta:visited {
+  display: inline-block;
+  background-color: var(--color-brand-2);
+  color: var(--color-dark-1);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1rem 3rem;
+  border-radius: 5px;
+}
+
+
+.cta:hover {
+  background-color: #00b35c;
+}

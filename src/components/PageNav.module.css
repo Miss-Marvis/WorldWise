@@ -1,0 +1,59 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  width: 100%;
+  z-index: 10;
+  /* position: absolute; */
+  top: 0; /* Position at the top of its container */
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  align-items: center;
+}
+
+.nav a:link,
+.nav a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: #00c46a;
+}
+
+.ctaLink:link,
+.ctaLink:visited {
+  background-color: #00c46a;
+  color: #000 !important;
+  padding: 0.8rem 1.6rem;
+  border-radius: 6px;
+}
+
+.ctaLink:hover,
+.ctaLink:active {
+  background-color: #00b35c;
+}
+
+/* For the logo container */
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 0.5rem;
+}

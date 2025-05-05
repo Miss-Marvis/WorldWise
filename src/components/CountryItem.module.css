@@ -1,0 +1,38 @@
+.countryItem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+  background-color:#42484d;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s;
+  border-left: 5px  solid #ffb545;
+}
+
+.countryItem:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+  font-size: 2.4rem;
+  line-height: 1;
+}
+
+.country {
+  font-size: 1.4rem;
+  color: #333;
+}
+
+/* If you want to make it clickable, you can style it as a button */
+.countryItem {
+  cursor: pointer;
+ 
+  text-align: left;
+  width: 100%;
+}

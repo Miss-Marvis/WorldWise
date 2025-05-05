@@ -1,0 +1,70 @@
+.city {
+  padding: 2rem 3rem;
+ 
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color:#2d3439;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.city h6 {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 900;
+  color: #999;
+  margin-bottom: 0.3rem;
+}
+
+.city h3 {
+  font-size: 1.9rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.city h3 span {
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.city p {
+  font-size: 1.2rem;
+}
+
+.city a:link,
+.city a:visited {
+  font-size: 1.2rem;
+  color: #00c46a;
+  text-decoration: none;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.city a:hover,
+.city a:active {
+  text-decoration: underline;
+}
+
+.btn {
+  padding: 0.8rem 1.6rem;
+  background-color: #00c46a;
+  color: #242a2e;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background-color: #00b55f;
+}

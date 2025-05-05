@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "id": 1,
+      "cityName": "Lisbon",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-10-31T15:59:59.138Z",
+      "notes": "My favorite city so far!",
+      "position": {
+        "lat": 38.72225,
+        "lng": -9.139755899797104
+      }
+    },
+    {
+      "id": 2,
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 40.416775,
+        "lng": -3.70379
+      }
+    },
+    {
+      "id": 3,
+      "cityName": "Berlin",
+      "country": "Germany",
+      "emoji": "🇩🇪",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "",
+      "position": {
+        "lat": 52.52,
+        "lng": 13.405
+      }
+    },
+    {
+      "id": 4,
+      "cityName": "Lagos",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2027-07-15T08:22:53.976Z",
+      "notes": "",
+      "position": {
+        "lat": 6.5244,
+        "lng": 3.3792
+      }
+    },
+    {
+      "id": 5,
+      "cityName": "Faro",
+      "country": "Portugal",
+      "emoji": "🇵🇹",
+      "date": "2027-02-12T09:24:11.863Z",
+      "notes": "",
+      "position": {
+        "lat": 37.0194,
+        "lng": -7.9304
+      }
+    }
+  ]
+}

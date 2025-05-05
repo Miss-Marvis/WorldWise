@@ -1,0 +1,117 @@
+/* More compact form container */
+.form {
+  background-color: #42484d;
+  border-radius: 7px;
+  padding: 1.4rem 2rem;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.08);
+}
+
+
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+
+}
+
+
+.row label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+
+.row input, 
+.row textarea {
+  font-family: inherit;
+  font-size: 1.3rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+
+
+.row textarea {
+  height: 5rem;
+  resize: vertical;
+}
+
+/* Form.module.css */
+
+.inputWrapper {
+	position: relative;
+}
+
+.inputWrapper input {
+	width: 100%;
+	padding-right: 2rem; 
+}
+
+.flag {
+	position: absolute;
+	right: 0.6rem;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	pointer-events: none;
+}
+
+.form.loading {
+  opacity: 0.3;
+}
+
+.form.loading button {
+  pointer-events: none;
+  background-color: #aaa;
+  border: 1px solid #aaa;
+  color: #242a2e;
+}
+
+:global(.react-datepicker) {
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+/* .buttons {
+  display: flex;
+  justify-content: space-between; 
+  margin-top: 0.5rem;
+}
+
+
+.buttons button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.buttons button:first-child {
+  background-color: #f3f4f6;
+  color: #374151;
+  
+}
+
+
+.buttons button:last-child {
+  background-color: #f3f4f6;
+  color: #374151;
+  justify-content: flex-end;
+  float: right;
+} */
+
+
+.row input:focus, 
+.row textarea:focus {
+  outline: none;
+  border-color: #42484d;
+}

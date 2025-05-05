@@ -1,0 +1,23 @@
+.cityList {
+  list-style: none;
+  padding: 0 0 2rem;
+  margin: 0;
+  height: 65vh;
+  overflow-y: auto;
+  width: 100%;
+
+}
+
+/* Custom scrollbar styling */
+.cityList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.cityList::-webkit-scrollbar-track {
+  background-color: #2d3439;
+}
+
+.cityList::-webkit-scrollbar-thumb {
+  background-color: #495057;
+  border-radius: 4px;
+}

@@ -1,0 +1,38 @@
+.spinnerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color:#aaa;; /* Change this color to match your site's theme */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* For a larger spinner, you can use these classes */
+.spinnerLarge {
+  width: 60px;
+  height: 60px;
+}
+
+/* For a smaller spinner */
+.spinnerSmall {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
