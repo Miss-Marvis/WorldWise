@@ -10,15 +10,15 @@ Context + useReducer for state management, and JSON Server as a mock backend.
 
 ### 🗺️ Map
 
-![Map](/Screenshot1.png)
+![Map](./public/Screenshot1.png)
 
 ### 🏙️ Add City
 
-![Add City](/Screenshot2.png)
+![Add City](./public/Screenshot2.png)
 
 ### 💵 Price Page
 
-![Price page](/Screenshot3.png)
+![Price page](./public/Screenshot3.png)
 
 ## 📦 Features
 
@@ -69,7 +69,7 @@ npm run json-server
 ## 👤 Author
 
 - GitHub: [@Miss-marvis](https://github.com/Miss-marvis)
-- Portfolio: [your-portfolio-link.com](https://your-portfolio-link.com)
+
 
 
   ## 🚀 Live Demo
