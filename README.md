@@ -42,7 +42,7 @@ data /public /src ├── components ├── contexts ├── pages ├─
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/worldwise.git
+git clone https://github.com/Miss-Marvis/worldwise.git
 cd worldwise
 ```
 

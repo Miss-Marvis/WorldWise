@@ -1,5 +1,5 @@
 // import React from 'react'
-import styles from './Pricing.module.css'
+import styles from './pricing.module.css'
 import PageNav from '../components/PageNav'
 
 function Pricing() {
