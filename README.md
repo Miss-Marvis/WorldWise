@@ -74,7 +74,7 @@ npm run json-server
 
   ## 🚀 Live Demo
 
-[👉 View Live App](https://your-netlify-url.netlify.app)
+[👉 View Live App](https://worldwise-explorer.netlify.app/)
 
 ````
 

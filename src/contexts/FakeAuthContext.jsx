@@ -1,7 +1,7 @@
 import { Children, useContext } from 'react'
 import { createContext, useReducer } from 'react'
 
-import avatarImage from '/public/avater.png'
+import avatarImage from '/src/avater.png'
 
 const AuthContext = createContext()
 
