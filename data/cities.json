@@ -11,6 +11,30 @@
         "lat": 40.416775,
         "lng": -3.70379
       }
+    },
+    {
+      "id": "3856",
+      "cityName": "Alfaro",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-05-05T19:02:19.837Z",
+      "notes": "Will definitely return here 🤩",
+      "position": {
+        "lat": 42.21072511143876,
+        "lng": -1.8237304687500002
+      }
+    },
+    {
+      "id": "cb0e",
+      "cityName": "Enugu",
+      "country": "Nigeria",
+      "emoji": "🇳🇬",
+      "date": "2025-05-09T13:13:47.444Z",
+      "notes": "I love it here",
+      "position": {
+        "lat": 9.538249985629038,
+        "lng": 8.041992187500002
+      }
     }
   ]
 }

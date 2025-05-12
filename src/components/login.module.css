@@ -62,3 +62,34 @@
   background-color: #00a84e;
 }
 
+/* Add these styles to your existing login.module.css file */
+
+.linkContainer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.linkContainer a {
+  color: var(--color-brand-600);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.linkContainer a:hover {
+  text-decoration: underline;
+}
+
+.error {
+  background-color: #fff0f0;
+  color: #e00;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.form h2 {
+  margin-bottom: 2rem;
+  text-align: center;
+}

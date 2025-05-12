@@ -4,10 +4,9 @@ import { useNavigate } from 'react-router-dom'
 
 function User() {
 	const { user, logout } = useAuth()
-	console.log('user', user)
-	if (!user) return null
-
 	const navigate = useNavigate()
+
+	if (!user) return null
 
 	function handleClick() {
 		logout()
@@ -16,10 +15,11 @@ function User() {
 
 	return (
 		<div className={styles.user}>
-			<img src={user.avater} alt={user.name} />
+			<img src={user.avatar} alt={user.name} />
 			<span>Welcome, {user.name}</span>
 			<button onClick={handleClick}>Logout</button>
 		</div>
 	)
 }
+
 export default User
