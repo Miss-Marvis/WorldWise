@@ -1,6 +1,5 @@
-// import React from 'react'
 import styles from './Map.module.css'
-import { useNavigate, useSearchParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useEffect } from 'react'
 import {
 	MapContainer,
@@ -15,18 +14,19 @@ import { useCities } from '../contexts/CitiesContext'
 import { useGeolocation } from '../hooks/useGeolocation'
 import { useUrlPosition } from '../hooks/useUrlPosition'
 import Button from './Button'
+import PropTypes from 'prop-types'
 
 export default function Map() {
-	const navigate = useNavigate()
+	// const navigate = useNavigate()
 	const { cities } = useCities()
 	const [mapPosition, setMapPosition] = useState([40, 0])
-	const [searchParams, setSearchParams] = useSearchParams()
 
 	const {
 		isLoading: isLoadingPosition,
 		position: geolocationPosition,
 		getPosition,
 	} = useGeolocation()
+
 	const [mapLat, mapLng] = useUrlPosition()
 
 	useEffect(() => {
@@ -37,8 +37,9 @@ export default function Map() {
 
 	useEffect(
 		function () {
-			if (geolocationPosition)
+			if (geolocationPosition) {
 				setMapPosition([geolocationPosition.lat, geolocationPosition.lng])
+			}
 			console.log('Geolocation position:', geolocationPosition)
 		},
 		[geolocationPosition]
@@ -77,6 +78,7 @@ export default function Map() {
 		</div>
 	)
 }
+
 function ChangeCenter({ position }) {
 	const map = useMap()
 
@@ -89,10 +91,17 @@ function ChangeCenter({ position }) {
 	return null
 }
 
+// Add PropTypes validation
+ChangeCenter.propTypes = {
+	position: PropTypes.arrayOf(PropTypes.number).isRequired,
+}
+
 function DetectClick() {
 	const navigate = useNavigate()
 
 	useMapEvent({
 		click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
 	})
+
+	return null
 }

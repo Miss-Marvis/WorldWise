@@ -1,10 +1,8 @@
-import { Children, useContext } from 'react'
+import { useContext } from 'react'
 import { createContext, useReducer } from 'react'
-
-// import { useContext } from 'react'
 import { useEffect } from 'react'
-
 import avatarImage from '/src/avater.png'
+import PropTypes from 'prop-types'
 
 const AuthContext = createContext()
 
@@ -39,16 +37,20 @@ function reducer(state, action) {
 			localStorage.setItem('worldWiseUser', JSON.stringify(action.payload))
 			localStorage.setItem('worldWiseAuth', JSON.stringify(true))
 			return { ...state, user: action.payload, isAuthenticated: true }
+
 		case 'logout':
 			// Remove from localStorage when logging out
 			localStorage.removeItem('worldWiseUser')
 			localStorage.removeItem('worldWiseAuth')
 			return { ...state, user: null, isAuthenticated: false }
-		case 'signup':
-			// Add new user to registered users
+
+		case 'signup': {
+			// Add new user to registered users - wrapped in block scope
 			const updatedUsers = [...state.registeredUsers, action.payload]
 			localStorage.setItem('worldWiseUsers', JSON.stringify(updatedUsers))
 			return { ...state, registeredUsers: updatedUsers }
+		}
+
 		default:
 			throw new Error('Unknown action')
 	}
@@ -65,12 +67,10 @@ function AuthProvider({ children }) {
 		const user = registeredUsers.find(
 			(user) => user.email === email && user.password === password
 		)
-
 		if (user) {
 			dispatch({ type: 'login', payload: user })
 			return true
 		}
-
 		return false
 	}
 
@@ -81,7 +81,6 @@ function AuthProvider({ children }) {
 	function signup(fullName, email, password) {
 		// Check if email already exists
 		const emailExists = registeredUsers.some((user) => user.email === email)
-
 		if (emailExists) {
 			return false
 		}
@@ -119,4 +118,7 @@ function useAuth() {
 	return context
 }
 
+AuthProvider.propTypes = {
+	children: PropTypes.node.isRequired,
+}
 export { AuthProvider, useAuth }
