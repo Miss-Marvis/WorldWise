@@ -53,7 +53,11 @@ npm install
 
 ## Run JSON Server for Fake Backend
 
-npm run json-server
+npm run server
+
+Local host
+npm run dev
+
 
 ## 🔒 Authentication
 

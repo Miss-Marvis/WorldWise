@@ -13,9 +13,7 @@ const isDevelopment =
 	window.location.port === '3000' ||
 	window.location.hostname.includes('dev')
 
-const BASE_URL = isDevelopment
-	? 'http://localhost:9000' // Use backend in development
-	: null // Use local data in production
+const BASE_URL = isDevelopment ? 'http://localhost:9000' : null
 
 const CitiesContext = createContext()
 
